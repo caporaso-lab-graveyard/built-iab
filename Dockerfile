@@ -2,11 +2,13 @@ FROM andrewosh/binder-base
 
 MAINTAINER Greg Caporaso <gregcaporaso@gmail.com>
 
-USER main
+USER root
 
 # Start xserver for ete3
 RUN export DISPLAY=:99.0
 RUN sh -e /etc/init.d/xvfb start
+
+USER main
 
 # Install IAB
 RUN conda install pip numpy scipy matplotlib nose scikit-bio jupyter seaborn pandas markdown2 networkx pyqt
