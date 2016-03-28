@@ -1,4 +1,4 @@
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/gregcaporaso/built-iab)
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/gregcaporaso/An-Introduction-to-Applied-Bioinformatics-binder-build)
 
 # An Introduction to Applied Bioinformatics (Binder build)
 
