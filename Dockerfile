@@ -7,7 +7,8 @@ USER root
 # Start xserver for ete3
 RUN apt-get update
 RUN apt-get install -y xvfb
-RUN Xvfb :99 & export DISPLAY=:99
+RUN Xvfb :99 &
+ENV DISPLAY :99.0
 
 USER main
 
