@@ -15,4 +15,4 @@ USER main
 # Install IAB
 RUN /bin/bash -c "source activate python3 && conda install --yes -c biocore python=3.5 pip numpy scipy matplotlib nose scikit-bio jupyter seaborn pandas markdown2 networkx pyqt"
 RUN /bin/bash -c "source activate python3 && pip install xvfbwrapper https://github.com/gregcaporaso/An-Introduction-To-Applied-Bioinformatics/archive/master.zip"
-#ADD https://raw.githubusercontent.com/arokem/xvfbmagic/master/xvfbmagic.py /home/main/notebooks/
+ADD https://raw.githubusercontent.com/arokem/xvfbmagic/master/xvfbmagic.py /home/main/notebooks/
