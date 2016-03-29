@@ -2,12 +2,12 @@ FROM andrewosh/binder-base
 
 MAINTAINER Greg Caporaso <gregcaporaso@gmail.com>
 
-USER root
+# USER root
 
-# Start xserver for ete3
-RUN apt-get update
-RUN apt-get install -y xvfb
-RUN Xvfb :99 & export DISPLAY=:99
+# # Start xserver for ete3
+# RUN apt-get update
+# RUN apt-get install -y xvfb
+# RUN Xvfb :99 & export DISPLAY=:99
 
 USER main
 
